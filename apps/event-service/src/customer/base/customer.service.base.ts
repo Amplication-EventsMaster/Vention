@@ -59,4 +59,10 @@ export class CustomerServiceBase {
       })
       .events(args);
   }
+ async customers3<T extends Prisma.CustomerFindManyArgs>(
+    args: Prisma.SelectSubset<T, Prisma.CustomerFindManyArgs>
+  ): Promise<PrismaCustomer[]> {
+    console.log("hello from base");
+  }
+ 
 }
