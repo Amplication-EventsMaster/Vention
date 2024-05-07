@@ -7,4 +7,10 @@ export class CustomerService extends CustomerServiceBase {
   constructor(protected readonly prisma: PrismaService) {
     super(prisma);
   }
+
+  async customers2<T extends Prisma.CustomerFindManyArgs>(
+    args: Prisma.SelectSubset<T, Prisma.CustomerFindManyArgs>
+  ): Promise<PrismaCustomer[]> {
+    console.log("hello");
+  }
 }
