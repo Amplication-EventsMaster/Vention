@@ -66,8 +66,11 @@ export class EventControllerBase {
         },
 
         date: true,
+        ddd: true,
         id: true,
         name: true,
+        ss: true,
+        sss: true,
         updatedAt: true,
       },
     });
@@ -99,8 +102,11 @@ export class EventControllerBase {
         },
 
         date: true,
+        ddd: true,
         id: true,
         name: true,
+        ss: true,
+        sss: true,
         updatedAt: true,
       },
     });
@@ -133,8 +139,11 @@ export class EventControllerBase {
         },
 
         date: true,
+        ddd: true,
         id: true,
         name: true,
+        ss: true,
+        sss: true,
         updatedAt: true,
       },
     });
@@ -184,8 +193,11 @@ export class EventControllerBase {
           },
 
           date: true,
+          ddd: true,
           id: true,
           name: true,
+          ss: true,
+          sss: true,
           updatedAt: true,
         },
       });
@@ -226,8 +238,11 @@ export class EventControllerBase {
           },
 
           date: true,
+          ddd: true,
           id: true,
           name: true,
+          ss: true,
+          sss: true,
           updatedAt: true,
         },
       });

@@ -34,7 +34,10 @@ model Event {
   customer   Customer? @relation(fields: [customerId], references: [id])
   customerId String?
   date       DateTime?
+  ddd        String?
   id         String    @id @default(cuid())
   name       String?
+  ss         String?
+  sss        String?
   updatedAt  DateTime  @updatedAt
 }

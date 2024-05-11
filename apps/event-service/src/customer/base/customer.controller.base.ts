@@ -225,8 +225,11 @@ export class CustomerControllerBase {
         },
 
         date: true,
+        ddd: true,
         id: true,
         name: true,
+        ss: true,
+        sss: true,
         updatedAt: true,
       },
     });

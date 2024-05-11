@@ -24,7 +24,10 @@ export const EventEdit = (props: EditProps): React.ReactElement => {
           <SelectInput optionText={CustomerTitle} />
         </ReferenceInput>
         <DateTimeInput label="Date" source="date" />
+        <TextInput label="ddd" source="ddd" />
         <TextInput label="Name" source="name" />
+        <TextInput label="ss" source="ss" />
+        <TextInput label="sss" source="sss" />
       </SimpleForm>
     </Edit>
   );
