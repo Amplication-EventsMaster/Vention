@@ -15,8 +15,8 @@ import { CustomerWhereUniqueInput } from "../../customer/base/CustomerWhereUniqu
 import { ValidateNested, IsOptional } from "class-validator";
 import { Type } from "class-transformer";
 import { DateTimeNullableFilter } from "../../util/DateTimeNullableFilter";
-import { StringFilter } from "../../util/StringFilter";
 import { StringNullableFilter } from "../../util/StringNullableFilter";
+import { StringFilter } from "../../util/StringFilter";
 
 @InputType()
 class EventWhereInput {
@@ -45,6 +45,17 @@ class EventWhereInput {
 
   @ApiProperty({
     required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
+  ddd?: StringNullableFilter;
+
+  @ApiProperty({
+    required: false,
     type: StringFilter,
   })
   @Type(() => StringFilter)
@@ -64,6 +75,28 @@ class EventWhereInput {
     nullable: true,
   })
   name?: StringNullableFilter;
+
+  @ApiProperty({
+    required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
+  ss?: StringNullableFilter;
+
+  @ApiProperty({
+    required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
+  sss?: StringNullableFilter;
 }
 
 export { EventWhereInput as EventWhereInput };
